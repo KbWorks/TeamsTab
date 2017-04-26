@@ -5,9 +5,9 @@
 <html>
   <body>
     <form>
-      <input type="radio" name="sitetype" value="Wortell" onclick="onClick()"> Bing Maps
+      <input type="radio" name="sitetype" value="Wortell" onclick="onClick()"> Wortell
       <br>
-      <input type="radio" name="sitetype" value="Blog" onclick="onClick()"> Google Maps
+      <input type="radio" name="sitetype" value="Blog" onclick="onClick()"> Blog
     </form>
 
     <script src="https://statics.teams.microsoft.com/sdk/v0.4/js/MicrosoftTeams.min.js"></script>
@@ -34,7 +34,7 @@
           });
         }
         saveEvent.notifySuccess();
-      });
+      });
 
       function onClick() {
         microsoftTeams.settings.setValidityState(true);
